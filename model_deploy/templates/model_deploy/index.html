@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "model_deploy/index.css" %}">
+    <title>Model Deploying</title>
+</head>
+<body>
+    <div>
+        <h1>Predict Your Salary</h1> 
+
+        <form method="POST">
+            {% csrf_token %}
+            <label class="age">Age in years</label>
+            <input type="text" name="age" class="age_input">
+    
+    
+            <label class="gender">Gender</label>
+            <select type="text" name="gender" class="gender_input">
+                <option value="0">women</option>
+                <option value="1">men</option>
+            </select>
+    
+    
+    
+    
+            <label class="exp">Experince in years</label>
+            <input  type="text" name="experince" class="exp_input">
+    
+    
+            <label class="educ_lvl">Eduaction Level</label>
+            <select type="text" name="educ_lvl" class="educ_lvl_input">
+                <option value="0">bachelor</option>
+                <option value="1">School</option>
+                <option value="2">Master's</option>
+                <option value="3">Other</option>
+                <option value="4">PhD</option>
+            </select>
+    
+    
+        <label class="job">Job Title</label>
+        <select type="text" name="job" class="job_input">
+            <option value="0">Business</option>
+            <option value="1">IT</option>
+            <option value="2">Manager's</option>
+            <option value="3">Marketing</option>
+            <option value="4">Other</option>
+        </select>
+    
+        <button  type="submit">
+            <span>GET prediction</span>
+          </button>
+        </form>
+    
+    </div>
+    
+    
+</body>
+</html>

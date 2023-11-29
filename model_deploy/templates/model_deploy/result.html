@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "model_deploy/result.css" %}">
+    <title>result</title>
+</head>
+<body>
+    
+    <div class="terminal-loader">
+        <div class="terminal-header">
+          <div class="terminal-title">Result of prediction</div>
+          <div class="terminal-controls">
+            <div class="control close"></div>
+            <div class="control minimize"></div>
+            <div class="control maximize"></div>
+          </div>
+        </div>
+        <div class="text">{{prediction}} $</div>
+      </div>
+      
+
+</body>
+</html>

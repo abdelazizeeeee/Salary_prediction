@@ -21,7 +21,6 @@ model = joblib.load(
 )
 print(model)
 
-
 class index(View):
     def get(self, request):
         return render(request, "model_deploy/index.html")

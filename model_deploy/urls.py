@@ -2,5 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path("",views.index.as_view())
+    path("template/",views.index.as_view()),
+    # path("<int:pk>",views.)
+    path("",views.CreateFeatures.as_view())
 ]
